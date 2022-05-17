@@ -13,6 +13,7 @@ public class Rounds : MonoBehaviour
     private int currentNumberRound = 0;
     private int enemiesLeft = 0;
     private int enemiesToKill = 0;
+    private Vector3 position;
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +29,8 @@ public class Rounds : MonoBehaviour
         {
             this.enemiesLeft--;
             waitTime = Time.time + currentRound.enemyTime;
-            GameObject newEnemy = Instantiate(currentRound.enemyType, transform.position, Quaternion.identity);
+            position = transform.GetChild(Random.Range(0, 2)).position;
+            GameObject newEnemy = Instantiate(currentRound.enemyType, position, Quaternion.identity);
 }
     }
 

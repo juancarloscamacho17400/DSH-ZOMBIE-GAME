@@ -6,7 +6,7 @@ using UnityStandardAssets.Characters.FirstPerson;
 public class Enemigo : LivingEntity
 {
     private UnityEngine.AI.NavMeshAgent pathfinder;
-    public Transform target;
+    private Transform target;
     private float myCollisionRadius;
     private float targetCollisionRadius;
     private float attackRange = 0.5f;

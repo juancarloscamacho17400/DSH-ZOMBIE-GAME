@@ -10,10 +10,11 @@ public class MovimientoBala : MonoBehaviour
     public delegate void OnDeath();
     public static event OnDeath OnDeathAnother;
     private float damage = 1;
+    private LayerMask LayerEnemy;
     // Start is called before the first frame update
     void Start()
     {
-        
+        LayerEnemy = LayerMask.NameToLayer("Enemy");
     }
 
     // Update is called once per frame
@@ -33,12 +34,14 @@ public class MovimientoBala : MonoBehaviour
     }
 
     void OnHitObject(RaycastHit hit){
-        GameObject.Destroy(gameObject);
-        IDamageable damageableObject = hit.collider.GetComponent<IDamageable>();
-        if(damageableObject != null){
-            damageableObject.TakeHit(damage, hit);
-            if (OnDeathAnother != null && damageableObject.Dead()){
-                OnDeathAnother();
+        GameObject.Destroy(gameObject); //Las balas desaparecen al chocar contra cualquier objeto perteneciente a uno de los layers en collisionMask
+        if(hit.transform.gameObject.layer == LayerEnemy){ //Si es un enemigo, recibe daño
+            IDamageable damageableObject = hit.collider.GetComponent<IDamageable>();
+            if(damageableObject != null){
+                damageableObject.TakeHit(damage, hit);
+                if (OnDeathAnother != null && damageableObject.Dead()){
+                    OnDeathAnother();
+                }
             }
         }
     }

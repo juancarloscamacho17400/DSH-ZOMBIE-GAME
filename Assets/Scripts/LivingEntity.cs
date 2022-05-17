@@ -6,11 +6,13 @@ public class LivingEntity : MonoBehaviour, IDamageable{
     protected bool dead;
     protected float health;
     public float initialHealth;
+    public ParticleSystem impactBlood;
     public void TakeHit(float damage, RaycastHit hit){
         TakeDamage(damage); 
     }
 
     public void TakeDamage(float damage){
+        impactBlood.Play();
         health -= damage;
         if(health <= 0 && !dead){
             Die();

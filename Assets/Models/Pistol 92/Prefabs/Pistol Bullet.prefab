@@ -98,7 +98,7 @@ MonoBehaviour:
   velocidad: 70
   collisionMask:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 72
 --- !u!135 &1323781353379420357
 SphereCollider:
   m_ObjectHideFlags: 0

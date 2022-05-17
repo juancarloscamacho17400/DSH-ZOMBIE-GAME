@@ -8,10 +8,10 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - InvWalls
   - Water
   - UI
-  - 
+  - Enemy
   - 
   - PostProcessing
   - 
