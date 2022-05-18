@@ -647,4 +647,15 @@ Received Import Request.
 Start importing Assets/Scenes/MapTest.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f36bbe006fa3f72f45cd03ad9fc159d') in 0.006016 seconds
   Import took 0.010865 seconds .
 
+<<<<<<< Updated upstream
+=======
+========================================================================
+Received Import Request.
+  Time since last request: 1758.297002 seconds.
+  path: Assets/Abandoned_Asylum/Models
+  artifactKey: Guid(26c601edef601b04ca14aee1c7b2a303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Abandoned_Asylum/Models using Guid(26c601edef601b04ca14aee1c7b2a303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1fa15212fe7a9233edce18222ca3d47') in 0.008197 seconds
+  Import took 0.012878 seconds .
+
+>>>>>>> Stashed changes
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
