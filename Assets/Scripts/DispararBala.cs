@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Windows.Speech;
+using System;
+using System.Linq;
 
 public class DispararBala : MonoBehaviour
 {
@@ -20,14 +23,24 @@ public class DispararBala : MonoBehaviour
     private float nextShot = 0f;
     public Text ammoDisplay;
     private bool isReloading = false;
+    private Dictionary<string, Action> keywordActions = new Dictionary<string, Action>();
+    private KeywordRecognizer keywordRecognizer;
     // Start is called before the first frame update
     void Start()
     {
+        keywordActions.Add("dispara", Shoot);
+        keywordRecognizer = new KeywordRecognizer(keywordActions.Keys.ToArray());
+        keywordRecognizer.OnPhraseRecognized += OnKeywordsRecognized;
+        keywordRecognizer.Start();
+
         ammoDisplay.text = maxAmmo.ToString() + "/" + maxAmmo.ToString();
         ammo = maxAmmo;
         m_AudioSource = GetComponent<AudioSource>();
     }
 
+    private void OnKeywordsRecognized(PhraseRecognizedEventArgs args){
+        keywordActions[args.text].Invoke();
+    }
     // Update is called once per frame
     void Update()
     {

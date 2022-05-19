@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.2/staging' branch; Version is '2020.2.3f1 (8ff31bc5bf5b) revision 9433883'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 19044.1706; Version 2009; 64bit' Language: 'es' Physical Memory: 12227 MB
+OS: 'Windows 10 Pro; OS build 19044.1706; Version 2009; 64bit' Language: 'en' Physical Memory: 16332 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -11,674 +11,48 @@ C:\Program Files\Unity\Hub\Editor\2020.2.3f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-E:/Unity/DSH-ZOMBIE-GAME
+C:/Users/karli/Desktop/UNI/DSH/Proyectos/DSH-ZOMBIE-GAME
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-58339
-Successfully changed project path to: E:/Unity/DSH-ZOMBIE-GAME
-E:/Unity/DSH-ZOMBIE-GAME
+64479
+Successfully changed project path to: C:/Users/karli/Desktop/UNI/DSH/Proyectos/DSH-ZOMBIE-GAME
+C:/Users/karli/Desktop/UNI/DSH/Proyectos/DSH-ZOMBIE-GAME
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 52.81 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 49.17 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.3f1 (8ff31bc5bf5b)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path E:/Unity/DSH-ZOMBIE-GAME/Assets
+[Subsystems] Discovering subsystems at path C:/Users/karli/Desktop/UNI/DSH/Proyectos/DSH-ZOMBIE-GAME/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1050 Ti (ID=0x1c82)
+    Renderer: NVIDIA GeForce GTX 1660 SUPER (ID=0x21c4)
     Vendor:   
-    VRAM:     4018 MB
-    Driver:   30.0.15.1277
+    VRAM:     5991 MB
+    Driver:   30.0.14.7141
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56116
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56648
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002181 seconds.
+Registered in 0.002211 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 52.29 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 43.43 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.896 seconds
+- Completed reload, in  0.938 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001844 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.81 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.981 seconds
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.65 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1520 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 82.0 MB.
-System memory in use after: 81.0 MB.
-
-Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 1955.
-Total: 2.443000 ms (FindLiveObjects: 0.207700 ms CreateObjectMapping: 0.067100 ms MarkObjects: 1.570000 ms  DeleteObjects: 0.597200 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Materials and textures/Materials/suelo.mat
-  artifactKey: Guid(595f45d8e3ee01e4091cf5a1286d7434) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Materials/suelo.mat using Guid(595f45d8e3ee01e4091cf5a1286d7434) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '950dbc619942493790b92e505883937b') in 0.227003 seconds
-  Import took 0.230869 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000314 seconds.
-  path: Assets/Materials and textures/Materials/sueloarriba.mat
-  artifactKey: Guid(fed7dfd37cd86bd4aac692f3fa80e770) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Materials/sueloarriba.mat using Guid(fed7dfd37cd86bd4aac692f3fa80e770) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c3b9f4ac79cf3e19d79912f23305efd') in 0.013390 seconds
-  Import took 0.018250 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000432 seconds.
-  path: Assets/Materials and textures/Materials/New Material.mat
-  artifactKey: Guid(fbf65c03b00645d4391f69462bce48a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Materials/New Material.mat using Guid(fbf65c03b00645d4391f69462bce48a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98bf2df7f9fd0a14ee6ea4ee5e423342') in 0.016346 seconds
-  Import took 0.020551 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000238 seconds.
-  path: Assets/Materials and textures/Materials/arco.mat
-  artifactKey: Guid(346956d0c3e2fe54fad45ffb85a7ea3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Materials/arco.mat using Guid(346956d0c3e2fe54fad45ffb85a7ea3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5218449aac72cac969928a304abf9a5f') in 0.013629 seconds
-  Import took 0.017660 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000276 seconds.
-  path: Assets/Materials and textures/Materials/suelo2.mat
-  artifactKey: Guid(14f7bbd5616654140937e70419a89581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Materials/suelo2.mat using Guid(14f7bbd5616654140937e70419a89581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f02203fa0c0164b96b8dd9b9d8436086') in 0.014443 seconds
-  Import took 0.018632 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000193 seconds.
-  path: Assets/Materials and textures/Materials/madera.mat
-  artifactKey: Guid(ae46aabd31e65da4aa650770973914ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Materials/madera.mat using Guid(ae46aabd31e65da4aa650770973914ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdac5d773134df670861eb7703edaa28') in 0.012483 seconds
-  Import took 0.015289 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000231 seconds.
-  path: Assets/Materials and textures/Materials/mas occuro.mat
-  artifactKey: Guid(3a7b0e1ff30dc4543b5e663000f9538a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Materials/mas occuro.mat using Guid(3a7b0e1ff30dc4543b5e663000f9538a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6d5f5b777075f62e3304b35974882c1') in 0.012782 seconds
-  Import took 0.015741 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 127.690774 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures
-  artifactKey: Guid(8f6120ad5b503a64ba15c17808887c13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures using Guid(8f6120ad5b503a64ba15c17808887c13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a0e22e49b84b4af3cc1e553682c5c98') in 0.007143 seconds
-  Import took 0.010995 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.056851 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/Antlers_2_Albedo.png
-  artifactKey: Guid(2e3cef8e8671f3f40a22322036d9cbd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/Antlers_2_Albedo.png using Guid(2e3cef8e8671f3f40a22322036d9cbd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ced13a65f004c38c7e66f3db8e5e3a0') in 0.075408 seconds
-  Import took 0.078545 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000252 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/Box_V2_MetallicSmoothness.png
-  artifactKey: Guid(4dbec8a4b9c4a8c4a9c4585153d563f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/Box_V2_MetallicSmoothness.png using Guid(4dbec8a4b9c4a8c4a9c4585153d563f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35a9c4b8ae3d2aad7045fa6df0430ab4') in 0.049376 seconds
-  Import took 0.052391 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000215 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/BigShelf_Stock_Normal.png
-  artifactKey: Guid(65c3c4daa0f7d9844ac2a9241c4ab43d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/BigShelf_Stock_Normal.png using Guid(65c3c4daa0f7d9844ac2a9241c4ab43d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e991c04697f858dcec2c7f87bd0af246') in 0.044595 seconds
-  Import took 0.047480 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000282 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/BigHangs_Normal.png
-  artifactKey: Guid(f5c5acf19e42a2d4ab0571460df1730c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/BigHangs_Normal.png using Guid(f5c5acf19e42a2d4ab0571460df1730c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '981d4c40a0d21340fd4e547d87d6adab') in 0.040859 seconds
-  Import took 0.043595 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000239 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/CanOld_Albedo.png
-  artifactKey: Guid(fe5a95c214eef644aadfb83e11683427) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/CanOld_Albedo.png using Guid(fe5a95c214eef644aadfb83e11683427) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f3567d3480e9e6330b3a369a7ca228f') in 0.017139 seconds
-  Import took 0.020015 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000267 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/Bath_Normal.png
-  artifactKey: Guid(3d6494bc59959314eaf99642cb6b58d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/Bath_Normal.png using Guid(3d6494bc59959314eaf99642cb6b58d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52409befc5ddf52659bba5a05ee170b0') in 0.028506 seconds
-  Import took 0.031609 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000289 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/Bath_MetallicSmoothness.png
-  artifactKey: Guid(81527029ffa77764081e3b934a7d3ac4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/Bath_MetallicSmoothness.png using Guid(81527029ffa77764081e3b934a7d3ac4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '527656b822b2433f9d9f27d5d1f20f0d') in 0.038818 seconds
-  Import took 0.042187 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000265 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/Bench_MetallicSmoothness.png
-  artifactKey: Guid(ac4b39ff56d188d42b28b0f1bb5dbcbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/Bench_MetallicSmoothness.png using Guid(ac4b39ff56d188d42b28b0f1bb5dbcbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52e38c36f5433f3d3c3a49f0391b4248') in 0.043855 seconds
-  Import took 0.047056 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000349 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/Bench_Albedo.png
-  artifactKey: Guid(6e224465334859e468f5b9ed8534b63a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/Bench_Albedo.png using Guid(6e224465334859e468f5b9ed8534b63a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8c6b3bef1edd78cd5c8a5f8414d463e') in 0.027783 seconds
-  Import took 0.030812 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000262 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/Bath_Albedo.png
-  artifactKey: Guid(adb060823cfd0a040906d3ad36959d7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/Bath_Albedo.png using Guid(adb060823cfd0a040906d3ad36959d7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2408e1732c22c4d6925dd3262337f2e5') in 0.030636 seconds
-  Import took 0.033552 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000280 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/BigShelf_MetallicSmoothness.png
-  artifactKey: Guid(f27b6a2330ee6d1488acafa2cb1fcb2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/BigShelf_MetallicSmoothness.png using Guid(f27b6a2330ee6d1488acafa2cb1fcb2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '042088a090198d133ac0d8d2644449dd') in 0.041215 seconds
-  Import took 0.043906 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000233 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/BigHangs_AlbedoTransparency_V2.png
-  artifactKey: Guid(a2046c8a99209c348a63022439d5c850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/BigHangs_AlbedoTransparency_V2.png using Guid(a2046c8a99209c348a63022439d5c850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '689af7fc584d68605e9fd9a00c0ee3e7') in 0.033792 seconds
-  Import took 0.037268 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000291 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/BigShelf_Stock_Albedo.png
-  artifactKey: Guid(1dd9988d4758b984cbd3bb086d51d4fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/BigShelf_Stock_Albedo.png using Guid(1dd9988d4758b984cbd3bb086d51d4fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bc3b1ba0017189e2576bac86f8fe569') in 0.028530 seconds
-  Import took 0.031975 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000249 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/Bed_MetallicSmoothness.png
-  artifactKey: Guid(1ec44cedc0fb3bf4b82b847c18eba090) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/Bed_MetallicSmoothness.png using Guid(1ec44cedc0fb3bf4b82b847c18eba090) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a007ba8625f0ea9b184e14d4fc495fb') in 0.039885 seconds
-  Import took 0.042365 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000257 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/Box_V2_Normal.png
-  artifactKey: Guid(518debed481bc3d45a92e83a687262c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/Box_V2_Normal.png using Guid(518debed481bc3d45a92e83a687262c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7717813ec9bcfb30f78057f53c259d8f') in 0.046067 seconds
-  Import took 0.048993 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000255 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/BigHangs_V3_AlbedoTransparency.png
-  artifactKey: Guid(1f3a2ccb083f36e42a9acae6a4d0d707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/BigHangs_V3_AlbedoTransparency.png using Guid(1f3a2ccb083f36e42a9acae6a4d0d707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cdd11b7002dcfa07aa122f5549cb518') in 0.034196 seconds
-  Import took 0.036997 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000203 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/Board_Albedo.png
-  artifactKey: Guid(7192bc92d0e548840b08abd10ec116c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/Board_Albedo.png using Guid(7192bc92d0e548840b08abd10ec116c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcc8918e5d9de75abd6f36298d1e7cca') in 0.022907 seconds
-  Import took 0.026519 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000244 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/Antlers_2_MetallicSmoothness.png
-  artifactKey: Guid(ef80c1062f5e197499345f663e316693) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/Antlers_2_MetallicSmoothness.png using Guid(ef80c1062f5e197499345f663e316693) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f27a05f0593320819c4e5769377c463') in 0.019240 seconds
-  Import took 0.022908 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000251 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/Antlers_Wood_Normal.png
-  artifactKey: Guid(019f46a065c39564b9f6147125ad6d43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/Antlers_Wood_Normal.png using Guid(019f46a065c39564b9f6147125ad6d43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35b10e916bd0e5569a28a76083aa4385') in 0.010542 seconds
-  Import took 0.014042 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000434 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/BedFeather_Albedo.png
-  artifactKey: Guid(353d9e948d81dc443a27a7f5f0b771eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/BedFeather_Albedo.png using Guid(353d9e948d81dc443a27a7f5f0b771eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fed6b6ec6c2592c60441059531918ff0') in 0.014341 seconds
-  Import took 0.018164 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000214 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/Bench_Normal.png
-  artifactKey: Guid(49964141b5a439b4998a80aef4b2303f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/Bench_Normal.png using Guid(49964141b5a439b4998a80aef4b2303f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1326027dada57a8ae32a888ea12b64af') in 0.044061 seconds
-  Import took 0.047644 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000379 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/BigShelf_Normal.png
-  artifactKey: Guid(fce6cb3aafccc484896ca3b79143d453) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/BigShelf_Normal.png using Guid(fce6cb3aafccc484896ca3b79143d453) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99183c850efbfae83f45d854b6361f0a') in 0.031118 seconds
-  Import took 0.034152 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000233 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/BigBoiler_Albedo.png
-  artifactKey: Guid(c703663d2d394ce4687f9fec2513b352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/BigBoiler_Albedo.png using Guid(c703663d2d394ce4687f9fec2513b352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b84633c59670a36668b2ac73fcd629dd') in 0.027445 seconds
-  Import took 0.029923 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000230 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/Antlers_Normal.png
-  artifactKey: Guid(04af8db615629d945b7ca63f55e82a39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/Antlers_Normal.png using Guid(04af8db615629d945b7ca63f55e82a39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36c580909aa25a40e4ee02155afdf86a') in 0.025960 seconds
-  Import took 0.028764 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000244 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/Antlers_Wood_Albedo.png
-  artifactKey: Guid(a73a9ce2311d0d74caf2a1a69de54491) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/Antlers_Wood_Albedo.png using Guid(a73a9ce2311d0d74caf2a1a69de54491) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be5f0674d2f06e3f77e14e560907ab60') in 0.013647 seconds
-  Import took 0.016415 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000250 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/BigHangs_AlbedoTransparency.png
-  artifactKey: Guid(4643df67fab917d49a7bb991be7a5cf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/BigHangs_AlbedoTransparency.png using Guid(4643df67fab917d49a7bb991be7a5cf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eacb8b701d18385c914248ec59f17025') in 0.037434 seconds
-  Import took 0.040268 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000219 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/BigHangs_MetallicSmoothness.png
-  artifactKey: Guid(868cdfd614733444c8a6eb8cffa8ca05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/BigHangs_MetallicSmoothness.png using Guid(868cdfd614733444c8a6eb8cffa8ca05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b02bb5705f38f91aa9c14341bce44144') in 0.037771 seconds
-  Import took 0.040572 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000213 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/BigKettle_Normal.png
-  artifactKey: Guid(de0e8b3b03c9e2348973cdc12c990e8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/BigKettle_Normal.png using Guid(de0e8b3b03c9e2348973cdc12c990e8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1f311cda2bde18a4a2eaa1dea8ebdc3') in 0.039271 seconds
-  Import took 0.041929 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000241 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/BigKettle_Albedo.png
-  artifactKey: Guid(e8f4417ac0d07034a92905e3e2b68cc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/BigKettle_Albedo.png using Guid(e8f4417ac0d07034a92905e3e2b68cc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68bb27200afde48d3b42fecf5cb182d2') in 0.028454 seconds
-  Import took 0.031232 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000281 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/Board_MetallicSmoothness.png
-  artifactKey: Guid(8aa4b651c16eb6940b99d89a69181b4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/Board_MetallicSmoothness.png using Guid(8aa4b651c16eb6940b99d89a69181b4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad0baaa530c8ec4e88ec839c17df5693') in 0.041593 seconds
-  Import took 0.044956 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000230 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/Box_V2_Albedo.png
-  artifactKey: Guid(5080a09559e7ea64895c89d6a3ef8d3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/Box_V2_Albedo.png using Guid(5080a09559e7ea64895c89d6a3ef8d3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3876fc0c33c687a595029f6d90ec03a5') in 0.028366 seconds
-  Import took 0.031405 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000209 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/BedFeather_MetallicSmoothness.png
-  artifactKey: Guid(a3bceef475cde014e9bea512a5d218c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/BedFeather_MetallicSmoothness.png using Guid(a3bceef475cde014e9bea512a5d218c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab5d36c29e53e35b8b8f94c23d90eb74') in 0.020874 seconds
-  Import took 0.024602 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000268 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/Box_V2_Albedo.png
-  artifactKey: Guid(5080a09559e7ea64895c89d6a3ef8d3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/Box_V2_Albedo.png using Guid(5080a09559e7ea64895c89d6a3ef8d3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3876fc0c33c687a595029f6d90ec03a5') in 0.024296 seconds
-  Import took 0.027670 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000284 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/BigKettle_MetallicSmoothness.png
-  artifactKey: Guid(fbff9b4c6e5d4ba4ba6201d2b0df0b45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/BigKettle_MetallicSmoothness.png using Guid(fbff9b4c6e5d4ba4ba6201d2b0df0b45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35b41411cdef75d5b08529cbd591ecd0') in 0.047496 seconds
-  Import took 0.050335 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000247 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/BigShelf_Albedo.png
-  artifactKey: Guid(75aecf9cfb8c51848b6f61a9c9f44b74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/BigShelf_Albedo.png using Guid(75aecf9cfb8c51848b6f61a9c9f44b74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a16a570c195ac8df9f69310a28d2b23') in 0.026672 seconds
-  Import took 0.029642 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000276 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/Bed_Normal.png
-  artifactKey: Guid(27069a5df96746f448377f5e8d427707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/Bed_Normal.png using Guid(27069a5df96746f448377f5e8d427707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11aa72d6733977683ae26c86b2793ae2') in 0.040424 seconds
-  Import took 0.043409 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000240 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/Box_V1_Albedo.png
-  artifactKey: Guid(8d8ae840d7bf04d45b88d57bfb399bc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/Box_V1_Albedo.png using Guid(8d8ae840d7bf04d45b88d57bfb399bc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9de68327a1ab952411acb703393e0d54') in 0.030764 seconds
-  Import took 0.033837 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000184 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/Box_V1_Normal.png
-  artifactKey: Guid(9d161e49eb22cfe4f8c93cac791c41e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/Box_V1_Normal.png using Guid(9d161e49eb22cfe4f8c93cac791c41e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2add0902af7824bd3a34568616858983') in 0.043688 seconds
-  Import took 0.046609 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/BigBoiler_Normal.png
-  artifactKey: Guid(df6de4c0de62bb046a756d5fc7c35b86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/BigBoiler_Normal.png using Guid(df6de4c0de62bb046a756d5fc7c35b86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b467a3c38acf145108e41fa002d9c2f8') in 0.028044 seconds
-  Import took 0.031272 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000241 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/BigBoiler_MetallicSmoothness.png
-  artifactKey: Guid(e5a176c6c3a43764097c7537f4d193f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/BigBoiler_MetallicSmoothness.png using Guid(e5a176c6c3a43764097c7537f4d193f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38e88b4d7aa4c1a0db51ec46c70bafce') in 0.041084 seconds
-  Import took 0.043947 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000230 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/BigBoiler_Normal.png
-  artifactKey: Guid(df6de4c0de62bb046a756d5fc7c35b86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/BigBoiler_Normal.png using Guid(df6de4c0de62bb046a756d5fc7c35b86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b467a3c38acf145108e41fa002d9c2f8') in 0.023732 seconds
-  Import took 0.026563 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000257 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/Antlers_2_Normal.png
-  artifactKey: Guid(f148ae55cede579479ccbccdf8515dee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/Antlers_2_Normal.png using Guid(f148ae55cede579479ccbccdf8515dee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15418ac96999c74f9795fbcb5cae700e') in 0.024610 seconds
-  Import took 0.028587 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000301 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/Antlers_Albedo.png
-  artifactKey: Guid(f327ada5c7c78b24a96f7309ff0480c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/Antlers_Albedo.png using Guid(f327ada5c7c78b24a96f7309ff0480c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f32b4180a511238cbd2d7de8fb026ccf') in 0.017064 seconds
-  Import took 0.020797 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000329 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/Antlers_Wood_MetallicSmoothness.png
-  artifactKey: Guid(fb35b4a983f890d41ad8af1cf60f5a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/Antlers_Wood_MetallicSmoothness.png using Guid(fb35b4a983f890d41ad8af1cf60f5a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31b845b385a0fceac84cd46514d5cf45') in 0.014825 seconds
-  Import took 0.018399 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000260 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/BigShelf_Stock_MetallicSmoothness.png
-  artifactKey: Guid(f6d7e4a9ca333d647916e489ade4dede) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/BigShelf_Stock_MetallicSmoothness.png using Guid(f6d7e4a9ca333d647916e489ade4dede) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24eec3299b8c5260b34b35e4c6deb9c7') in 0.039398 seconds
-  Import took 0.042747 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000210 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/BedFeather_Normal.png
-  artifactKey: Guid(422e83553c268a743a57ae647804db36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/BedFeather_Normal.png using Guid(422e83553c268a743a57ae647804db36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd9f339a803ec26a6f1359154c8bd5e4') in 0.024417 seconds
-  Import took 0.027733 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000289 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/Board_Normal.png
-  artifactKey: Guid(3473c7f3820817c4eaf3e84c26ecd3f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/Board_Normal.png using Guid(3473c7f3820817c4eaf3e84c26ecd3f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14e23faee120f0dc0b6e4ae00f9d5ae7') in 0.031587 seconds
-  Import took 0.034806 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000258 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/Bed_Albedo.png
-  artifactKey: Guid(ee8653f6b14438c4c8c9852fdf85358b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/Bed_Albedo.png using Guid(ee8653f6b14438c4c8c9852fdf85358b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0667753423ab47e44a55511378984b2c') in 0.023448 seconds
-  Import took 0.027114 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000281 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/Antlers_MetallicSmoothness.png
-  artifactKey: Guid(2ccb26dccd2b3574487efba5f8b00562) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/Antlers_MetallicSmoothness.png using Guid(2ccb26dccd2b3574487efba5f8b00562) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42890a22ae989b305e937e4061dfa1b5') in 0.021574 seconds
-  Import took 0.025011 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000227 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Textures/Box_V1_MetallicSmoothness.png
-  artifactKey: Guid(23a089a4f6ce723428aae4e699889197) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/Box_V1_MetallicSmoothness.png using Guid(23a089a4f6ce723428aae4e699889197) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c768f96fc1c63af809ef8b0de73b616') in 0.030599 seconds
-  Import took 0.034005 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.363734 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Materials
-  artifactKey: Guid(bb48d42c07b5f00448e3be0e8012efef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Materials using Guid(bb48d42c07b5f00448e3be0e8012efef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53eaf0550337673649faacf441e0d175') in 0.005263 seconds
-  Import took 0.008644 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.098275 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Materials/Carpet.mat
-  artifactKey: Guid(1f564cfb93fe3b24999e08c1c480d4e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Materials/Carpet.mat using Guid(1f564cfb93fe3b24999e08c1c480d4e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92a7e1699969e7110bc4b2c7286e7268') in 0.185892 seconds
-  Import took 0.191551 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000408 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Materials/Window_Barrier.mat
-  artifactKey: Guid(95564c316f849f94b86311a72e2fae62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Materials/Window_Barrier.mat using Guid(95564c316f849f94b86311a72e2fae62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b61f0f41f5d81e6cdda8252bb1968723') in 0.086587 seconds
-  Import took 0.090631 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000247 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Materials/Window_DayRoom.mat
-  artifactKey: Guid(f93a153f68e116642ae15b033f0704f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Materials/Window_DayRoom.mat using Guid(f93a153f68e116642ae15b033f0704f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d3ea5192991d9f73563988653336778') in 0.029556 seconds
-  Import took 0.033032 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000260 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Materials/MainDoor.mat
-  artifactKey: Guid(fb3d020ef621f964ea4f7e8b0519069a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Materials/MainDoor.mat using Guid(fb3d020ef621f964ea4f7e8b0519069a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f525d49dd2ec55f1e6afce9218e63de0') in 0.064278 seconds
-  Import took 0.067211 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000257 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Materials/Door.mat
-  artifactKey: Guid(a5f6fa497cf53d7469bd1066732507c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Materials/Door.mat using Guid(a5f6fa497cf53d7469bd1066732507c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff76a39a3ff3e4f79c6662c69e9cb1a4') in 0.055604 seconds
-  Import took 0.059421 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000263 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Materials/Door_Frame.mat
-  artifactKey: Guid(efaf25d412a96c1489d5aa3458f8cb18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Materials/Door_Frame.mat using Guid(efaf25d412a96c1489d5aa3458f8cb18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3151a76720fced79ecf3e8f874647261') in 0.053048 seconds
-  Import took 0.056075 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.916177 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum
-  artifactKey: Guid(8ab25878ab1a9a44ca29cb84dcc51071) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum using Guid(8ab25878ab1a9a44ca29cb84dcc51071) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf4a0ef69a7f25d70f73f6fabc1e9834') in 0.004969 seconds
-  Import took 0.008260 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.422237 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Prefabs
-  artifactKey: Guid(bfe59a3291f0c164e8dabac677968290) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Prefabs using Guid(bfe59a3291f0c164e8dabac677968290) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00777af2bb60ef3f26291e3fb16c2880') in 0.007816 seconds
-  Import took 0.011300 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000866 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Prefabs
-  artifactKey: Guid(bfe59a3291f0c164e8dabac677968290) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Prefabs using Guid(bfe59a3291f0c164e8dabac677968290) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00777af2bb60ef3f26291e3fb16c2880') in 0.001513 seconds
-  Import took 0.004588 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.041907 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Prefabs/Chandelier.prefab
-  artifactKey: Guid(fc9c58f21e7a1f24197eae26baeee04b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Prefabs/Chandelier.prefab using Guid(fc9c58f21e7a1f24197eae26baeee04b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dadd841a6ac2087abb7e8f1a57fe7f7') in 0.026347 seconds
-  Import took 0.029469 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000268 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Prefabs/WindowHall.prefab
-  artifactKey: Guid(f0bca500522992e4eb2bccd77624431c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Prefabs/WindowHall.prefab using Guid(f0bca500522992e4eb2bccd77624431c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57985b7ed9b93fccd2ba7f6811648c8b') in 0.011814 seconds
-  Import took 0.015159 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000262 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Prefabs/Door_V1.prefab
-  artifactKey: Guid(b95c20770a08b1549a9ba34c35f574e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Prefabs/Door_V1.prefab using Guid(b95c20770a08b1549a9ba34c35f574e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9953c43cd1ee90c21e26057711261441') in 0.092568 seconds
-  Import took 0.095930 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000234 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Prefabs/MainDoor.prefab
-  artifactKey: Guid(61f9be1d46932944bb6df561189e9996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Prefabs/MainDoor.prefab using Guid(61f9be1d46932944bb6df561189e9996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0a8350b48781a60b91ace2872cf7072') in 0.062331 seconds
-  Import took 0.065708 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000253 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Prefabs/Window.prefab
-  artifactKey: Guid(73cbfd2f0f824ff4c85a12059bfddef5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Prefabs/Window.prefab using Guid(73cbfd2f0f824ff4c85a12059bfddef5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a6abe73d4db984a725d1e09c3db6d8c') in 0.011260 seconds
-  Import took 0.015025 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000269 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Prefabs/Door_V2.prefab
-  artifactKey: Guid(0f2f9c5303aac26479fc10d223f34183) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Prefabs/Door_V2.prefab using Guid(0f2f9c5303aac26479fc10d223f34183) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4337929d5c6fcab756fa9dfd8272579e') in 0.011269 seconds
-  Import took 0.014353 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000252 seconds.
-  path: Assets/Materials and textures/Abandoned_Asylum/Prefabs/Window_Barrier.prefab
-  artifactKey: Guid(dce8c74ce38efac48ba61ebacf23ff34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials and textures/Abandoned_Asylum/Prefabs/Window_Barrier.prefab using Guid(dce8c74ce38efac48ba61ebacf23ff34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc274e6d3899855777694d76840aaa03') in 0.070590 seconds
-  Import took 0.074320 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001448 seconds.
+Registered in 0.001827 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
@@ -688,14 +62,409 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.956 seconds
+- Completed reload, in  0.672 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.64 ms, found 0 plugins.
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.62 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1520 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 99.2 MB.
+System memory in use after: 98.3 MB.
+
+Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 1974.
+Total: 2.437500 ms (FindLiveObjects: 0.332900 ms CreateObjectMapping: 0.055200 ms MarkObjects: 1.584400 ms  DeleteObjects: 0.464000 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Materials and textures/Abandoned_Asylum/Textures/Tiled/Walls/Wall_4_Albedo.png
+  artifactKey: Guid(8229a7859c2ec1544ad2f809a0469b6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/Tiled/Walls/Wall_4_Albedo.png using Guid(8229a7859c2ec1544ad2f809a0469b6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8027dbfefd9056ac8a8052d659390afd') in 0.305226 seconds
+  Import took 0.307796 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.132772 seconds.
+  path: Assets/Materials and textures/Abandoned_Asylum/Textures/Tiled/Walls/Wall_4_Albedo.png
+  artifactKey: Guid(8229a7859c2ec1544ad2f809a0469b6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials and textures/Abandoned_Asylum/Textures/Tiled/Walls/Wall_4_Albedo.png using Guid(8229a7859c2ec1544ad2f809a0469b6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8027dbfefd9056ac8a8052d659390afd') in 0.012026 seconds
+  Import took 0.014525 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001889 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.652 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.80 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1481 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 82.7 MB.
-System memory in use after: 81.8 MB.
+System memory in use before: 96.5 MB.
+System memory in use after: 95.5 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 1978.
+Total: 2.196800 ms (FindLiveObjects: 0.228800 ms CreateObjectMapping: 0.039100 ms MarkObjects: 1.438700 ms  DeleteObjects: 0.489200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002128 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.655 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.63 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1481 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.5 MB.
+System memory in use after: 95.6 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 1980.
+Total: 2.670100 ms (FindLiveObjects: 0.228600 ms CreateObjectMapping: 0.043700 ms MarkObjects: 1.830800 ms  DeleteObjects: 0.565200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001896 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.647 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.63 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1481 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.5 MB.
+System memory in use after: 95.6 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 1982.
+Total: 2.490000 ms (FindLiveObjects: 0.243000 ms CreateObjectMapping: 0.034100 ms MarkObjects: 1.378600 ms  DeleteObjects: 0.832300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002216 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.720 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.67 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1481 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.5 MB.
+System memory in use after: 95.6 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 1984.
+Total: 2.223000 ms (FindLiveObjects: 0.199700 ms CreateObjectMapping: 0.035400 ms MarkObjects: 1.413700 ms  DeleteObjects: 0.573500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1196.084121 seconds.
+  path: Assets/Prefabs/Zombie 1.prefab
+  artifactKey: Guid(cb662f0e6e139364e94cfebbb037d25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Zombie 1.prefab using Guid(cb662f0e6e139364e94cfebbb037d25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7f0136577bbcba2eb7b2c5622751929') in 0.176342 seconds
+  Import took 0.181964 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.433355 seconds.
+  path: Assets/Prefabs/Zombie 1.prefab
+  artifactKey: Guid(cb662f0e6e139364e94cfebbb037d25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Zombie 1.prefab using Guid(cb662f0e6e139364e94cfebbb037d25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6913eb1e7e4eae4afe89dc27dd4f71e7') in 0.080181 seconds
+  Import took 0.084801 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001929 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.67 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.745 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.66 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1481 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 110.7 MB.
+System memory in use after: 109.8 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 1994.
+Total: 2.129000 ms (FindLiveObjects: 0.191100 ms CreateObjectMapping: 0.034900 ms MarkObjects: 1.329400 ms  DeleteObjects: 0.572800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002228 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.770 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.71 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1481 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 110.7 MB.
+System memory in use after: 109.8 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 1996.
+Total: 2.576200 ms (FindLiveObjects: 0.238400 ms CreateObjectMapping: 0.035600 ms MarkObjects: 1.636500 ms  DeleteObjects: 0.664200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001999 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.636 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.76 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1481 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 110.7 MB.
+System memory in use after: 109.8 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 1998.
+Total: 3.063900 ms (FindLiveObjects: 0.263400 ms CreateObjectMapping: 0.044600 ms MarkObjects: 2.069800 ms  DeleteObjects: 0.684400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002072 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.642 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.91 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1481 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 110.7 MB.
+System memory in use after: 109.8 MB.
 
 Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2000.
-Total: 3.026900 ms (FindLiveObjects: 0.229100 ms CreateObjectMapping: 0.118800 ms MarkObjects: 1.990900 ms  DeleteObjects: 0.687300 ms)
+Total: 2.749700 ms (FindLiveObjects: 0.282900 ms CreateObjectMapping: 0.045600 ms MarkObjects: 1.766700 ms  DeleteObjects: 0.652900 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001909 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.647 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.62 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1481 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 110.7 MB.
+System memory in use after: 109.8 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2002.
+Total: 2.344200 ms (FindLiveObjects: 0.249200 ms CreateObjectMapping: 0.035500 ms MarkObjects: 1.367700 ms  DeleteObjects: 0.690800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001959 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.654 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.70 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1481 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 110.8 MB.
+System memory in use after: 109.8 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2004.
+Total: 2.535100 ms (FindLiveObjects: 0.222300 ms CreateObjectMapping: 0.041600 ms MarkObjects: 1.618300 ms  DeleteObjects: 0.651600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001940 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.645 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.62 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1481 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 110.8 MB.
+System memory in use after: 109.8 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2006.
+Total: 2.838600 ms (FindLiveObjects: 0.214800 ms CreateObjectMapping: 0.036400 ms MarkObjects: 1.904000 ms  DeleteObjects: 0.682000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001883 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.632 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.67 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1481 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 110.8 MB.
+System memory in use after: 109.8 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2008.
+Total: 2.178800 ms (FindLiveObjects: 0.181100 ms CreateObjectMapping: 0.033200 ms MarkObjects: 1.349400 ms  DeleteObjects: 0.613900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001925 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.656 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.65 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1481 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 110.8 MB.
+System memory in use after: 109.8 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2010.
+Total: 2.446500 ms (FindLiveObjects: 0.298600 ms CreateObjectMapping: 0.044400 ms MarkObjects: 1.441000 ms  DeleteObjects: 0.661400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002150 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.647 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.62 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1481 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 110.8 MB.
+System memory in use after: 109.9 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2012.
+Total: 2.391700 ms (FindLiveObjects: 0.213200 ms CreateObjectMapping: 0.042900 ms MarkObjects: 1.503900 ms  DeleteObjects: 0.630400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001945 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.655 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.66 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1481 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 110.8 MB.
+System memory in use after: 109.9 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2014.
+Total: 2.647400 ms (FindLiveObjects: 0.307000 ms CreateObjectMapping: 0.037300 ms MarkObjects: 1.619300 ms  DeleteObjects: 0.682800 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
