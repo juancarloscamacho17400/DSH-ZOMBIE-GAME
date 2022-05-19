@@ -841,12 +841,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!1 &139470891 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1466030917571864049, guid: 19af7f16bce72bb4290eecae5aa8142a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1466030917709221338}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &147554455
 GameObject:
   m_ObjectHideFlags: 0
@@ -1946,7 +1940,7 @@ PrefabInstance:
     - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_GameOverScreen
       value: 
-      objectReference: {fileID: 139470891}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
 --- !u!1 &423536927
@@ -15088,6 +15082,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 914451011950030632, guid: 19af7f16bce72bb4290eecae5aa8142a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1466030917877550171, guid: 19af7f16bce72bb4290eecae5aa8142a,
         type: 3}
       propertyPath: m_Pivot.x
@@ -15198,5 +15197,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: HUD
       objectReference: {fileID: 0}
+    - target: {fileID: 3851839383319297580, guid: 19af7f16bce72bb4290eecae5aa8142a,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3940180324650345331, guid: 19af7f16bce72bb4290eecae5aa8142a,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    - target: {fileID: 5276141703017426903, guid: 19af7f16bce72bb4290eecae5aa8142a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6513562196344397185, guid: 19af7f16bce72bb4290eecae5aa8142a,
+        type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6513562196344397185, guid: 19af7f16bce72bb4290eecae5aa8142a,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 86b2583ead207a847b17c62bc9912f12, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19af7f16bce72bb4290eecae5aa8142a, type: 3}
