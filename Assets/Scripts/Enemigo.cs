@@ -17,6 +17,12 @@ public class Enemigo : LivingEntity
     private float damage = 1;
     private bool bEndGame = false;
     private Animator animator;
+    private AudioSource m_AudioSource;
+    public AudioClip[] m_TakeDamage;
+    public AudioClip[] m_DeathSound;
+    public AudioClip[] m_AttackSound;
+    public ParticleSystem impactBlood;
+    private bool dying;
 
 
     // Start is called before the first frame update
@@ -24,14 +30,14 @@ public class Enemigo : LivingEntity
     {
         base.Start();
         target = GameObject.FindGameObjectWithTag("Player").transform;
-        pathfinder = GetComponent<UnityEngine.AI.NavMeshAgent>(); 
-
+        pathfinder = GetComponent<UnityEngine.AI.NavMeshAgent>();
         myCollisionRadius = GetComponent<CapsuleCollider>().radius;
+        m_AudioSource = GetComponent<AudioSource>();
         targetCollisionRadius = target.GetComponent<CapsuleCollider>().radius;
         targetEntity = target.GetComponent<FirstPersonController>();
         FirstPersonController.onPlayerDeath += EndGame;
-
         animator = GetComponent<Animator>();
+        dying = false;
     }
 
     // Update is called once per frame
@@ -61,6 +67,31 @@ public class Enemigo : LivingEntity
         bEndGame = true;
     }
 
+    public override void TakeDamage(float damage){
+        impactBlood.Play();
+        health -= damage;
+        if(health <= 0 && !dead){
+            StartCoroutine(Die());
+        }
+        else {
+            int n = Random.Range(0, m_TakeDamage.Length);
+            m_AudioSource.clip = m_TakeDamage[n];
+            m_AudioSource.PlayOneShot(m_AudioSource.clip);
+        }
+    }
+
+    public override IEnumerator Die()
+    {
+        if(!dying){
+            int n = Random.Range(0, m_DeathSound.Length);
+            m_AudioSource.clip = m_DeathSound[n];
+            m_AudioSource.PlayOneShot(m_AudioSource.clip);
+            dying = true;
+            yield return new WaitForSeconds(1);
+            dead = true;
+        }
+    }
+
     IEnumerator Attack(){
         if(!bEndGame){
             pathfinder.enabled = false;
@@ -73,6 +104,9 @@ public class Enemigo : LivingEntity
             float attackSpeed = 1;
 
             bool hasAppliedDamage = false;
+            int n = Random.Range(0, m_AttackSound.Length);
+            m_AudioSource.clip = m_AttackSound[n];
+            m_AudioSource.PlayOneShot(m_AudioSource.clip);
             targetEntity.gotHurt();
             while (percent <= 1){
                 if(percent >= .5f && !hasAppliedDamage){

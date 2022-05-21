@@ -6,16 +6,15 @@ public class LivingEntity : MonoBehaviour, IDamageable{
     protected bool dead;
     protected float health;
     public float initialHealth;
-    public ParticleSystem impactBlood;
+
     public void TakeHit(float damage, RaycastHit hit){
         TakeDamage(damage); 
     }
 
-    public void TakeDamage(float damage){
-        impactBlood.Play();
+    virtual public void TakeDamage(float damage){
         health -= damage;
         if(health <= 0 && !dead){
-            Die();
+            StartCoroutine(Die());
         }
     }
 
@@ -23,7 +22,8 @@ public class LivingEntity : MonoBehaviour, IDamageable{
         return dead;
     }
 
-    public void Die(){
+    virtual public IEnumerator Die(){
+        yield return null; 
         dead = true;
     }
     // Start is called before the first frame update

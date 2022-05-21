@@ -31,6 +31,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         [SerializeField] private AudioClip m_JumpSound;           // the sound played when character leaves the ground.
         [SerializeField] private AudioClip m_LandSound;           // the sound played when character touches back on ground.
         [SerializeField] private AudioClip m_GameOver;
+        [SerializeField] private AudioClip[] m_TakeDamage;
 
         private Camera m_Camera;
         private bool m_Jump;
@@ -68,7 +69,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_AudioSource = GetComponent<AudioSource>();
 			m_MouseLook.Init(transform , m_Camera.transform);
             health = initialHealth;
-            dead = false;
             playGameOverSound = true;
         }
 
@@ -153,6 +153,16 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
             m_PreviouslyGrounded = m_CharacterController.isGrounded;
         }
+
+        public override void TakeDamage(float damage){
+        health -= damage;
+        int n = Random.Range(0, m_TakeDamage.Length);
+        m_AudioSource.clip = m_TakeDamage[n];
+        m_AudioSource.PlayOneShot(m_AudioSource.clip);
+        if(health <= 0 && !dead){
+            StartCoroutine(Die());
+        }
+    }
 
         public void gotHurt(){
             var color = m_GotHitScreen.GetComponent<Image>().color;
