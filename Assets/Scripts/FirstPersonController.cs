@@ -30,6 +30,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         [SerializeField] private AudioClip[] m_FootstepSounds;    // an array of footstep sounds that will be randomly selected from.
         [SerializeField] private AudioClip m_JumpSound;           // the sound played when character leaves the ground.
         [SerializeField] private AudioClip m_LandSound;           // the sound played when character touches back on ground.
+        [SerializeField] private AudioClip m_GameOver;
 
         private Camera m_Camera;
         private bool m_Jump;
@@ -48,6 +49,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
         public static event OnPlayerDeath onPlayerDeath;
         public GameObject m_GotHitScreen;
         public GameObject m_GameOverScreen;
+        public GameObject m_GameOverText;
+        public GameObject m_RoundsSurvivedText;
+        public GameObject m_RestartText;
+        public GameObject m_QuitText;
+        private bool playGameOverSound;
         // Use this for initialization
         protected override void Start()
         {
@@ -63,6 +69,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 			m_MouseLook.Init(transform , m_Camera.transform);
             health = initialHealth;
             dead = false;
+            playGameOverSound = true;
         }
 
 
@@ -92,11 +99,43 @@ namespace UnityStandardAssets.Characters.FirstPerson
             if(dead == true){
                 onPlayerDeath();
                 var color = m_GameOverScreen.GetComponent<Image>().color;
-                if(m_GameOverScreen.GetComponent<Image>().color.a < 1)
+                var color2 = m_GameOverText.GetComponent<Text>().color;
+                var color3 = m_RoundsSurvivedText.GetComponent<Text>().color;
+                var color4 = m_RestartText.GetComponent<Text>().color;
+                var color5 = m_QuitText.GetComponent<Text>().color;
+                if(playGameOverSound){
+                    m_AudioSource.PlayOneShot(m_GameOver);
+                    playGameOverSound = false;
+                }
+                if(m_GameOverScreen.GetComponent<Image>().color.a < 0.98)
                 {
                     color.a += 0.0008f;
 
                     m_GameOverScreen.GetComponent<Image>().color = color;
+                }
+                if(m_GameOverText.GetComponent<Text>().color.a < 1)
+                {
+                    color2.a += 0.0008f;
+
+                    m_GameOverText.GetComponent<Text>().color = color2;
+                }
+                if(m_RoundsSurvivedText.GetComponent<Text>().color.a < 1)
+                {
+                    color3.a += 0.0008f;
+
+                    m_RoundsSurvivedText.GetComponent<Text>().color = color3;
+                }
+                if(m_RestartText.GetComponent<Text>().color.a < 1)
+                {
+                    color4.a += 0.0008f;
+
+                    m_RestartText.GetComponent<Text>().color = color4;
+                }
+                if(m_QuitText.GetComponent<Text>().color.a < 1)
+                {
+                    color5.a += 0.0008f;
+
+                    m_QuitText.GetComponent<Text>().color = color5;
                 }
             }
             
