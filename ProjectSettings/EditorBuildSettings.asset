@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MapMansion_v1.unity
     guid: 45c37c336077c0f4e9f7c267ec998fcb
+  - enabled: 1
+    path: Assets/Scenes/MapMansion_v2.unity
+    guid: e08ce35a8df427b4db3e2bc86bd3f8f0
   m_configObjects: {}

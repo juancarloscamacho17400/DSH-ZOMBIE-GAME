@@ -9,14 +9,14 @@ using Random = UnityEngine.Random;
 #pragma warning disable 618, 649
 namespace UnityStandardAssets.Characters.FirstPerson
 {
-    [RequireComponent(typeof (CharacterController))]
-    [RequireComponent(typeof (AudioSource))]
+    [RequireComponent(typeof(CharacterController))]
+    [RequireComponent(typeof(AudioSource))]
     public class FirstPersonController : LivingEntity
     {
         [SerializeField] private bool m_IsWalking;
         [SerializeField] private float m_WalkSpeed;
         [SerializeField] private float m_RunSpeed;
-        [SerializeField] [Range(0f, 1f)] private float m_RunstepLenghten;
+        [SerializeField][Range(0f, 1f)] private float m_RunstepLenghten;
         [SerializeField] private float m_JumpSpeed;
         [SerializeField] private float m_StickToGroundForce;
         [SerializeField] private float m_GravityMultiplier;
@@ -54,20 +54,28 @@ namespace UnityStandardAssets.Characters.FirstPerson
         public GameObject m_RoundsSurvivedText;
         public GameObject m_RestartText;
         public GameObject m_QuitText;
+        public GameObject m_TabScore;
+        private bool tabScore;
+        public GameObject m_Displays;
+        private bool displays;
         private bool playGameOverSound;
         // Use this for initialization
         protected override void Start()
         {
+            m_TabScore.SetActive(false);
+            tabScore = false;
+            m_Displays.SetActive(true);
+            displays = true;
             m_CharacterController = GetComponent<CharacterController>();
             m_Camera = Camera.main;
             m_OriginalCameraPosition = m_Camera.transform.localPosition;
             m_FovKick.Setup(m_Camera);
             m_HeadBob.Setup(m_Camera, m_StepInterval);
             m_StepCycle = 0f;
-            m_NextStep = m_StepCycle/2f;
+            m_NextStep = m_StepCycle / 2f;
             m_Jumping = false;
             m_AudioSource = GetComponent<AudioSource>();
-			m_MouseLook.Init(transform , m_Camera.transform);
+            m_MouseLook.Init(transform, m_Camera.transform);
             health = initialHealth;
             playGameOverSound = true;
         }
@@ -76,6 +84,15 @@ namespace UnityStandardAssets.Characters.FirstPerson
         // Update is called once per frame
         private void Update()
         {
+            //Show tab score
+            if (Input.GetKey(KeyCode.Tab))
+            {
+                displays = !displays;
+                tabScore = !tabScore;
+                m_TabScore.SetActive(tabScore);
+                m_Displays.SetActive(displays);
+            }
+
             RotateView();
             // the jump state needs to read here to make sure it is not missed
             if (!m_Jump)
@@ -96,52 +113,54 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 m_MoveDir.y = 0f;
             }
 
-            if(dead == true){
+            if (dead == true)
+            {
                 onPlayerDeath();
                 var color = m_GameOverScreen.GetComponent<Image>().color;
                 var color2 = m_GameOverText.GetComponent<Text>().color;
                 var color3 = m_RoundsSurvivedText.GetComponent<Text>().color;
                 var color4 = m_RestartText.GetComponent<Text>().color;
                 var color5 = m_QuitText.GetComponent<Text>().color;
-                if(playGameOverSound){
+                if (playGameOverSound)
+                {
                     m_AudioSource.PlayOneShot(m_GameOver);
                     playGameOverSound = false;
                 }
-                if(m_GameOverScreen.GetComponent<Image>().color.a < 0.98)
+                if (m_GameOverScreen.GetComponent<Image>().color.a < 0.98)
                 {
                     color.a += 0.0008f;
 
                     m_GameOverScreen.GetComponent<Image>().color = color;
                 }
-                if(m_GameOverText.GetComponent<Text>().color.a < 1)
+                if (m_GameOverText.GetComponent<Text>().color.a < 1)
                 {
                     color2.a += 0.0008f;
 
                     m_GameOverText.GetComponent<Text>().color = color2;
                 }
-                if(m_RoundsSurvivedText.GetComponent<Text>().color.a < 1)
+                if (m_RoundsSurvivedText.GetComponent<Text>().color.a < 1)
                 {
                     color3.a += 0.0008f;
 
                     m_RoundsSurvivedText.GetComponent<Text>().color = color3;
                 }
-                if(m_RestartText.GetComponent<Text>().color.a < 1)
+                if (m_RestartText.GetComponent<Text>().color.a < 1)
                 {
                     color4.a += 0.0008f;
 
                     m_RestartText.GetComponent<Text>().color = color4;
                 }
-                if(m_QuitText.GetComponent<Text>().color.a < 1)
+                if (m_QuitText.GetComponent<Text>().color.a < 1)
                 {
                     color5.a += 0.0008f;
 
                     m_QuitText.GetComponent<Text>().color = color5;
                 }
             }
-            
-            if(m_GotHitScreen != null)
+
+            if (m_GotHitScreen != null)
             {
-                if(m_GotHitScreen.GetComponent<Image>().color.a > 0)
+                if (m_GotHitScreen.GetComponent<Image>().color.a > 0)
                 {
                     var color = m_GotHitScreen.GetComponent<Image>().color;
 
@@ -154,17 +173,20 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_PreviouslyGrounded = m_CharacterController.isGrounded;
         }
 
-        public override void TakeDamage(float damage){
-        health -= damage;
-        int n = Random.Range(0, m_TakeDamage.Length);
-        m_AudioSource.clip = m_TakeDamage[n];
-        m_AudioSource.PlayOneShot(m_AudioSource.clip);
-        if(health <= 0 && !dead){
-            StartCoroutine(Die());
+        public override void TakeDamage(float damage)
+        {
+            health -= damage;
+            int n = Random.Range(0, m_TakeDamage.Length);
+            m_AudioSource.clip = m_TakeDamage[n];
+            m_AudioSource.PlayOneShot(m_AudioSource.clip);
+            if (health <= 0 && !dead)
+            {
+                StartCoroutine(Die());
+            }
         }
-    }
 
-        public void gotHurt(){
+        public void gotHurt()
+        {
             var color = m_GotHitScreen.GetComponent<Image>().color;
             color.a = 0.8f;
 
@@ -183,16 +205,16 @@ namespace UnityStandardAssets.Characters.FirstPerson
             float speed;
             GetInput(out speed);
             // always move along the camera forward as it is the direction that it being aimed at
-            Vector3 desiredMove = transform.forward*m_Input.y + transform.right*m_Input.x;
+            Vector3 desiredMove = transform.forward * m_Input.y + transform.right * m_Input.x;
 
             // get a normal for the surface that is being touched to move along it
             RaycastHit hitInfo;
             Physics.SphereCast(transform.position, m_CharacterController.radius, Vector3.down, out hitInfo,
-                               m_CharacterController.height/2f, Physics.AllLayers, QueryTriggerInteraction.Ignore);
+                               m_CharacterController.height / 2f, Physics.AllLayers, QueryTriggerInteraction.Ignore);
             desiredMove = Vector3.ProjectOnPlane(desiredMove, hitInfo.normal).normalized;
 
-            m_MoveDir.x = desiredMove.x*speed;
-            m_MoveDir.z = desiredMove.z*speed;
+            m_MoveDir.x = desiredMove.x * speed;
+            m_MoveDir.z = desiredMove.z * speed;
 
 
             if (m_CharacterController.isGrounded)
@@ -209,9 +231,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
             else
             {
-                m_MoveDir += Physics.gravity*m_GravityMultiplier*Time.fixedDeltaTime;
+                m_MoveDir += Physics.gravity * m_GravityMultiplier * Time.fixedDeltaTime;
             }
-            m_CollisionFlags = m_CharacterController.Move(m_MoveDir*Time.fixedDeltaTime);
+            m_CollisionFlags = m_CharacterController.Move(m_MoveDir * Time.fixedDeltaTime);
 
             ProgressStepCycle(speed);
             UpdateCameraPosition(speed);
@@ -231,7 +253,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         {
             if (m_CharacterController.velocity.sqrMagnitude > 0 && (m_Input.x != 0 || m_Input.y != 0))
             {
-                m_StepCycle += (m_CharacterController.velocity.magnitude + (speed*(m_IsWalking ? 1f : m_RunstepLenghten)))*
+                m_StepCycle += (m_CharacterController.velocity.magnitude + (speed * (m_IsWalking ? 1f : m_RunstepLenghten))) *
                              Time.fixedDeltaTime;
             }
 
@@ -274,7 +296,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             {
                 m_Camera.transform.localPosition =
                     m_HeadBob.DoHeadBob(m_CharacterController.velocity.magnitude +
-                                      (speed*(m_IsWalking ? 1f : m_RunstepLenghten)));
+                                      (speed * (m_IsWalking ? 1f : m_RunstepLenghten)));
                 newCameraPosition = m_Camera.transform.localPosition;
                 newCameraPosition.y = m_Camera.transform.localPosition.y - m_JumpBob.Offset();
             }
@@ -322,7 +344,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void RotateView()
         {
-            m_MouseLook.LookRotation (transform, m_Camera.transform);
+            m_MouseLook.LookRotation(transform, m_Camera.transform);
         }
 
 
@@ -339,7 +361,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             {
                 return;
             }
-            body.AddForceAtPosition(m_CharacterController.velocity*0.1f, hit.point, ForceMode.Impulse);
+            body.AddForceAtPosition(m_CharacterController.velocity * 0.1f, hit.point, ForceMode.Impulse);
         }
     }
 }

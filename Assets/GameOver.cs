@@ -18,7 +18,7 @@ public class GameOver : MonoBehaviour
 
     public void RestartButton()
     {
-        SceneManager.LoadScene(1);  // Again mansion map
+        SceneManager.LoadScene(2);  // Again mansion map
     }
     public void QuitButton()
     {
