@@ -62,9 +62,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
         // Use this for initialization
         protected override void Start()
         {
-            m_TabScore.SetActive(false);
+            //m_TabScore.SetActive(false);
             tabScore = false;
-            m_Displays.SetActive(true);
+            //m_Displays.SetActive(true);
             displays = true;
             m_CharacterController = GetComponent<CharacterController>();
             m_Camera = Camera.main;

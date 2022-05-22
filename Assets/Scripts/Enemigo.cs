@@ -21,8 +21,11 @@ public class Enemigo : LivingEntity
     public AudioClip[] m_TakeDamage;
     public AudioClip[] m_DeathSound;
     public AudioClip[] m_AttackSound;
+    public AudioClip[] m_IdleSound;
+    public AudioClip[] m_FootstepSounds;
     public ParticleSystem impactBlood;
     private bool dying;
+    private float nextStep = 0f;
 
 
     // Start is called before the first frame update
@@ -38,15 +41,19 @@ public class Enemigo : LivingEntity
         FirstPersonController.onPlayerDeath += EndGame;
         animator = GetComponent<Animator>();
         dying = false;
+        int n = Random.Range(0, m_IdleSound.Length);
+        m_AudioSource.clip = m_IdleSound[n];
+        m_AudioSource.PlayOneShot(m_AudioSource.clip);
     }
 
     // Update is called once per frame
     void Update()
     {   
         if(!bEndGame){
-            if(!attacking){
+            if(!attacking && !dying){
                     Vector3 dirToTarget = (target.position - transform.position).normalized;
                     Vector3 targetPosition = target.position - dirToTarget * (myCollisionRadius + targetCollisionRadius + attackRange); 
+                    ProgressStepCycle(1f);
                     pathfinder.SetDestination(targetPosition);
 
                     if(Time.time > timeUntilNextAttack){
@@ -58,6 +65,9 @@ public class Enemigo : LivingEntity
                         }
                     }
             }
+            if(dying){
+                pathfinder.enabled = false;
+            }
             if(dead){
                 GameObject.Destroy(gameObject);
             }
@@ -67,6 +77,9 @@ public class Enemigo : LivingEntity
         bEndGame = true;
     }
 
+    public bool Dying(){
+        return dying;
+    }
     public override void TakeDamage(float damage){
         impactBlood.Play();
         health -= damage;
@@ -92,8 +105,32 @@ public class Enemigo : LivingEntity
         }
     }
 
+    private void ProgressStepCycle(float speed)
+        {
+            if (Time.time < nextStep)
+            {
+                return;
+            }
+
+            nextStep = Time.time + speed;
+            PlayFootStepAudio();
+        }
+    
+    private void PlayFootStepAudio()
+        {
+            // pick & play a random footstep sound from the array,
+            // excluding sound at index 0
+            int n = Random.Range(1, m_FootstepSounds.Length);
+            m_AudioSource.clip = m_FootstepSounds[n];
+            m_AudioSource.PlayOneShot(m_AudioSource.clip);
+            //m_AudioSource.volume = 1;
+            // move picked sound to index 0 so it's not picked next time
+            m_FootstepSounds[n] = m_FootstepSounds[0];
+            m_FootstepSounds[0] = m_AudioSource.clip;
+        }
+
     IEnumerator Attack(){
-        if(!bEndGame){
+        if(!bEndGame && !dying){
             pathfinder.enabled = false;
             attacking = true;
             Vector3 originalPosition = transform.position;

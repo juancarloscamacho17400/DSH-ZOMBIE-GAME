@@ -9767,6 +9767,15 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 2628db55e50fe41cc9879051d359847a, type: 3}
   - {fileID: 8300000, guid: 94e452828af664292a97c95ec9452126, type: 3}
   - {fileID: 8300000, guid: 2c706f39dc7b645e0a17766d7757d4c5, type: 3}
+  m_IdleSound:
+  - {fileID: 8300000, guid: 90d342cf6f89440b9aa6c6ef4af6af88, type: 3}
+  - {fileID: 8300000, guid: 8c8b4012f639545b2a1f70a2082307b3, type: 3}
+  - {fileID: 8300000, guid: ad7b6eb3c723442b483e6b280fa02230, type: 3}
+  m_FootstepSounds:
+  - {fileID: 8300000, guid: ce1415c1538344a3f9c07f2388ee0dee, type: 3}
+  - {fileID: 8300000, guid: df874be086de9441a8ef805bd42d0fff, type: 3}
+  - {fileID: 8300000, guid: d47d075cb98ed4b869828da8dfd7ed52, type: 3}
+  - {fileID: 8300000, guid: 8af1d3f5222454aaabfae1a13ce78592, type: 3}
   impactBlood: {fileID: 8876114425846689189}
 --- !u!95 &7522523493304832754
 Animator:
@@ -9808,9 +9817,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 30
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -9818,10 +9827,19 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
+      time: 0.05
       value: 1
       inSlope: 0
       outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.5103707
+      value: 0.2656676
+      inSlope: -1.0526316
+      outSlope: -1.0526316
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
@@ -9829,12 +9847,12 @@ AudioSource:
     - serializedVersion: 3
       time: 1
       value: 0
-      inSlope: 0
-      outSlope: 0
+      inSlope: -1.0526316
+      outSlope: -1.0526316
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -9843,7 +9861,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0

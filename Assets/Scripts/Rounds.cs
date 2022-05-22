@@ -29,15 +29,14 @@ public class Rounds : MonoBehaviour
         {
             this.enemiesLeft--;
             waitTime = Time.time + currentRound.enemyTime;
-            position = transform.GetChild(Random.Range(0, 2)).position;
+            position = transform.GetChild(Random.Range(0, 6)).position;
             GameObject newEnemy = Instantiate(currentRound.enemyType, position, Quaternion.identity);
-}
+        }
     }
 
     void killAnother()
     {
         enemiesToKill--;
-
         if(enemiesToKill == 0)
         {
             if(currentNumberRound < maxRound){
@@ -47,11 +46,11 @@ public class Rounds : MonoBehaviour
     }
 
     void NextRound()
-    {   
+    {      
         currentNumberRound++;
+        round.text = currentNumberRound.ToString();
         currentRound = enemyRounds[currentNumberRound - 1];
         enemiesLeft = currentRound.enemyNumber;
         enemiesToKill = currentRound.enemyNumber;
-        round.text = currentNumberRound.ToString();
     }
 }
