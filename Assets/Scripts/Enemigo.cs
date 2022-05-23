@@ -96,6 +96,7 @@ public class Enemigo : LivingEntity
     public override IEnumerator Die()
     {
         if(!dying){
+            FirstPersonController.changeScore(2);
             int n = Random.Range(0, m_DeathSound.Length);
             m_AudioSource.clip = m_DeathSound[n];
             m_AudioSource.PlayOneShot(m_AudioSource.clip);

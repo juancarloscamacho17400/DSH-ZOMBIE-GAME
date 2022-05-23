@@ -55,6 +55,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
         public GameObject m_RestartText;
         public GameObject m_QuitText;
         public GameObject m_TabScore;
+        private static int score = 0;
+        public Text m_Score;
         private bool tabScore;
         public GameObject m_Displays;
         private bool displays;
@@ -62,6 +64,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         // Use this for initialization
         protected override void Start()
         {
+            m_Score.text = score.ToString();
             //m_TabScore.SetActive(false);
             tabScore = false;
             //m_Displays.SetActive(true);
@@ -78,6 +81,24 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_MouseLook.Init(transform, m_Camera.transform);
             health = initialHealth;
             playGameOverSound = true;
+        }
+        public static void changeScore (int i){
+            switch(i){
+                case 0: 
+                    score += 10;
+                    break;
+                case 1:
+                    score += 30;
+                    break;
+                case 2:
+                    score += 100;
+                    break;
+                case 3:
+                    score -= 1000;
+                    break;
+                default:
+                    break;
+            }
         }
 
 
@@ -169,10 +190,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
                     m_GotHitScreen.GetComponent<Image>().color = color;
                 }
             }
-
+            m_Score.text = score.ToString();
             m_PreviouslyGrounded = m_CharacterController.isGrounded;
         }
-
         public override void TakeDamage(float damage)
         {
             health -= damage;
